@@ -1,0 +1,48 @@
+include ../pug-modules/mixins
+block variables
+
+doctype html
+html(lang="ru")
+
+	head
+		meta(charset="utf-8")
+		title #{title}
+		meta(http-equiv='X-UA-Compatible', content="IE=edge")
+		meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no")
+
+		//- meta(name="robots", content="noindex, nofollow")
+
+		link(rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon")
+		link(rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png")
+		link(rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png")
+		link(rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png")
+		meta(name="theme-color" content="#000")
+		meta(name="msapplication-navbutton-color" content="#000")
+		meta(name="apple-mobile-web-app-status-bar-style" content="#000")
+
+		link(rel="preload", href="fonts/MyriadPro-Regular.woff2", as="font", type="font/woff2", crossorigin)
+		link(rel="preload", href="fonts/MyriadPro-Bold.woff2", as="font", type="font/woff2", crossorigin)
+		link(rel="preload", href="fonts/MyriadPro-It.woff2", as="font", type="font/woff2", crossorigin)
+
+		// styles
+		block libs-css
+		link(rel="stylesheet" href="css/styles.css")
+
+	body 
+
+
+		.page
+
+			include ../sections/header
+
+
+			block content
+
+
+
+			include ../sections/footer
+
+		// /.page
+
+		// scripts
+		include ../pug-modules/scripts

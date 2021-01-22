@@ -1,0 +1,24 @@
+extends layout/main
+
+block variables
+	- let title = 'Название - Главная'
+
+
+
+block content
+	include sections-index/hero
+	include sections-index/solution
+	include sections-index/provider
+	include sections-index/custom
+
+
+
+
+
+//- block libs-css
+	// библиотека.css
+	link(rel="stylesheet" href="libs/library/library.css")
+
+//- block libs-js
+	// библиотека.js
+	script(src="libs/library/library.js")

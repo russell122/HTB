@@ -1,0 +1,35 @@
+.provider
+	background-color: $bgSection
+	padding: 90px 0 108px 0
+	@media (max-width: $md)
+		padding: 60px 0
+	h2
+		margin-bottom: 50px
+	&__wrap
+		display: flex
+		@media (max-width: $lg)
+			flex-wrap: wrap
+			flex-direction: column
+	&__img
+		flex-shrink: 0
+		@media (max-width: $lg)
+			display: flex
+			justify-content: center
+			margin-bottom: 30px
+	&__body
+		position: relative
+		margin-left: auto
+		@media (max-width: $lg)
+			margin-left: 0
+		.elem
+			border-left: 4px solid #091b21
+			height: 115px
+			position: absolute
+			left: -7%
+			top: 0
+			@media (max-width: $lg)
+				display: none
+		p
+			width: 600px
+			@media (max-width: $lg)
+				width: 100%

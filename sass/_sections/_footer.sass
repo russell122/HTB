@@ -1,0 +1,91 @@
+/* ----- footer ----- */
+.footer
+	background-color: $black
+	color: $footer-text-color
+	padding: 64px 0 44px 0
+	@media (max-width: $md)
+		padding: 20px 0
+	a
+		transition: all ease .2s
+		&:hover
+			color: $accent
+	&__wrap
+		display: flex
+		@media (max-width: $lg)
+			flex-wrap: wrap
+	&__logo-wrap
+		display: flex
+		flex-direction: column
+		flex: 0 1 20%
+		@media (max-width: $lg)
+			flex: 0 1 30%
+			margin-bottom: 30px
+		@media (max-width: $sm)
+			flex: 0 1 100%
+			justify-content: center
+			align-items: center
+			margin-bottom: 20px
+	&__logo
+		margin-bottom: 35px
+		@media (max-width: $sm)
+			margin-bottom: 20px
+	&__copy
+		font-size: 12px
+	&__menu
+		flex: 0 1 50%
+		@media (max-width: $lg)
+			flex: 0 1 70%
+			display: flex
+			justify-content: flex-end
+		@media (max-width: $sm)
+			flex: 0 1 100%
+			justify-content: center
+			align-items: center
+			margin-bottom: 20px
+		ul
+			display: flex
+			list-style-type: none
+			margin: 0
+			padding: 0
+			li
+				margin-right: 40px
+				&:last-child
+					margin-right: 0
+				a
+					font-size: 11px
+	&__info-wrap
+		flex: 0 1 20%
+		@media (max-width: $lg)
+			flex: 0 1 80%
+		@media (max-width: $sm)
+			flex: 0 1 100%
+			justify-content: center
+			align-items: center
+			margin-bottom: 20px
+			text-align: center
+	&__info-elem
+		margin-bottom: 20px
+		@media (max-width: $sm)
+			margin-bottom: 10px
+		&:last-child
+			margin-bottom: 0
+		p
+			margin: 0
+		a
+			display: block
+	&__socials
+		display: flex
+		flex: 0 1 10%
+		justify-content: space-between
+		@media (max-width: $lg)
+			flex: 0 1 20%
+		@media (max-width: $sm)
+			flex: 0 1 100%
+			justify-content: center
+			align-items: center
+		.footer__social
+			@media (max-width: $sm)
+				padding: 0 10px
+		.svg
+			width: 20px
+			height: 20px
